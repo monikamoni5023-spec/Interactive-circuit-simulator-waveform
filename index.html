@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive ALU Simulator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Star Background -->
+  <canvas id="stars-bg"></canvas>
+
+  <!-- Top Credit Bar -->
+  <div id="topCredit">✨ Designed &amp; Developed by Monika M ✨</div>
+
+  <!-- Header -->
+  <header>
+    <h1>Low Power ALU Design using Verilog</h1>
+    <p class="subtitle">Interactive ALU Simulator</p>
+  </header>
+
+  <!-- ALU Simulator Section -->
+  <section class="simulator-section">
+    <div class="simulator-card">
+      <h2>Try the ALU</h2>
+
+      <div class="input-group">
+        <label for="inputA">Input A</label>
+        <input type="number" id="inputA" placeholder="Enter value A">
+      </div>
+
+      <div class="input-group">
+        <label for="inputB">Input B</label>
+        <input type="number" id="inputB" placeholder="Enter value B">
+      </div>
+
+      <div class="input-group">
+        <label for="operation">Operation</label>
+        <select id="operation">
+          <option value="add">Addition (+)</option>
+          <option value="sub">Subtraction (-)</option>
+          <option value="and">AND</option>
+          <option value="or">OR</option>
+          <option value="xor">XOR</option>
+          <option value="not">NOT</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button id="executeBtn" class="btn btn-primary">Execute</button>
+        <button id="clearBtn" class="btn btn-secondary">Clear</button>
+      </div>
+
+      <div class="result-box" id="resultBox">
+        Result will appear here
+      </div>
+    </div>
+  </section>
+
+  <!-- About Project Section -->
+  <section class="section about">
+    <h2>About the Project</h2>
+    <p>
+      This simulator demonstrates the working principle of a Low Power ALU designed using Verilog HDL
+      for VLSI applications. It allows users to perform basic arithmetic and logical operations, the same
+      operations carried out by the actual RTL design, giving a hands-on feel for how an Arithmetic Logic
+      Unit processes data at the hardware level.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features">
+    <h2>Features</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Arithmetic Operations</h3>
+        <p>Performs addition and subtraction with accurate results.</p>
+      </div>
+      <div class="card">
+        <h3>Logical Operations</h3>
+        <p>Supports AND, OR, XOR, and NOT operations.</p>
+      </div>
+      <div class="card">
+        <h3>Low Power Design</h3>
+        <p>Based on an ALU architecture optimized for reduced power consumption.</p>
+      </div>
+      <div class="card">
+        <h3>Verilog RTL Design</h3>
+        <p>Reflects the logic implemented in the original Verilog HDL design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Developed for VLSI &amp; Digital Electronics Mini Project</p>
+    <p class="footer-credit">Designed &amp; Developed by Monika M</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
